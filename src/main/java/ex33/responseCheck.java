@@ -6,7 +6,7 @@ public class responseCheck {
     public static void runResponse (String response){
         String[] optionsArray = {"Yes.", "No.", "Maybe.", "Ask again later."}; //Array to store outcome options.
 
-        if (response.isEmpty()) {
+        if (response.isBlank()) {
             System.out.print("Please enter a response.");
         }
         else {
