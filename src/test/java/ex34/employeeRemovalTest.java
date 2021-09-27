@@ -7,6 +7,11 @@ import static org.junit.jupiter.api.Assertions.*;
 class employeeRemovalTest {
 
     @Test
-    void employeeNameRemoval() {
+    void employeeNameRemoval(String args) {
+        String[] employeesArray = {"John Smith", "Jackie Jackson", "Chris Jones", "Amanda Cullen", "Jeremy Goodwin"};
+        int size = employeesArray.length;
+        String name;
+        employeeNameRemoval("John Smith");
+        assertEquals(4, employeesArray.length);
     }
 }
